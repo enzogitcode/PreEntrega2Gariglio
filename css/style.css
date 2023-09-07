@@ -1,0 +1,230 @@
+@font-face {
+    font-family: RifficFreeBold;
+    src: url(../fonts/RifficFree-Bold.ttf);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: RifficFreeBold;
+}
+
+body {
+    background-image: url(../imgs/backgroundIndex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+header nav {
+    background-color: rgba(214, 138, 138, 0.9);
+    display: flex;
+    padding: 0px;
+}
+
+header nav li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    display: inline-flex;
+    margin: 5px 1px;
+    justify-content: center;
+}
+
+header nav li a {
+    font-family: rifficFreeBold;
+    text-shadow: 1px 1px rgb(245, 245, 220);
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.cajaTitulo {
+    margin: 5px;
+    background-image: url(../imgs/imagenTitulo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+h1 {
+    color: rgb(243, 6, 6);
+    text-align: center;
+    font-style: oblique;
+    padding: 2% 2%;
+    justify-content: center;
+    font-size: 70px;
+    text-shadow: 2px 3px rgb(245, 245, 220);
+}
+
+h2 {
+    background-color: rgb(144, 238, 144);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+h3 {
+    background-color: rgb(144, 238, 144);
+    border-radius: 10px;
+}
+
+.mainContactos {
+    justify-content: center;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardItem {
+    width: 18rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.flexItemCorte {
+    display: inline-flex;
+    background-color: rgb(13, 189, 7);
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+
+.flexItemCorte :hover {
+    transform-origin: left;
+    transition-duration: .9s;
+    border: dashed rgb(128, 45, 45) 5px;
+}
+
+.flexItemCorte a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    background-color: rgb(13, 189, 7);
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px;
+    border: 5px rgb(13, 189, 7) solid;
+}
+
+h5 {
+    justify-content: right;
+    padding: 5px;
+    text-align: center;
+    background-color: bisque;
+    border: dotted 1px;
+    text-align: center;
+}
+
+.cajaDeRecetasCompletas {
+    border: 2px dashed #000;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexReceta {
+    margin: 5px;
+    background-color: rgba(207, 152, 85, .6);
+    border: 2px dotted #000;
+    display: grid;
+    grid-template-areas: "ingredientes flexReceta__img" "preparacion preparacion"
+}
+
+.form-check ul li {
+    list-style: none;
+}
+
+.flexReceta__ingredientes {
+    grid-area: ingredientes
+}
+
+.flexReceta__preparacion {
+    grid-area: preparacion
+}
+
+.flexReceta__img {
+    grid-area: flexReceta__img;
+    display: flex;
+    border: solid #000;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.flexReceta__img img {
+    object-fit: cover;
+}
+
+
+.form-control:focus {
+    box-shadow: 1px 4px rgb(13, 189, 7);
+}
+
+.botonForm {
+    background-color: rgb(13, 189, 7)
+}
+
+.botonForm:hover {
+    background-color: rgb(13, 189, 7);
+    box-shadow: 4px 1px 0 #000000;
+}
+
+
+footer {
+    background-image: url(../imgs/imagenFooter.jpg);
+    text-align: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: rifficFreeBold;
+    color: aliceblue;
+}
+
+footer p {
+    font-size: 30px;
+    background-color: rgb(243, 6, 6, .8);
+    border-radius: 50px;
+}
+
+h4 {
+    font-family: rifficFreeBold;
+    color: rgb(240, 248, 255);
+    text-shadow: rgb(221, 221, 191);
+}
+
+footer nav li {
+    list-style: none;
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: column;
+    margin: 20px;
+}
+
+.socialLink nav li a {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.socialLink nav ul li svg {
+    width: 50px;
+    height: 50px;
+}
+
+.quienesSomos p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
